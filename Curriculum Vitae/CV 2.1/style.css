@@ -1,0 +1,79 @@
+/* My profile image needed to be resized */
+img{
+    width: 200px;
+}
+
+body {
+    background-color: #f5f4ea;
+}
+
+h1 {
+    color: rgb(222, 124, 59);
+    text-shadow: 5px 5px hsla(348, 84%, 81%, 0.5);
+    font-family: lemon, sans-serif;
+    font-size: 40px;
+}
+
+h2 {
+    color: #e39932;
+    font-family: lemon, sans-serif;
+    font-size: 30px;
+}
+
+h3 {
+    color:#587768;
+    font-family: lemon, sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    color: #e4bcc4;
+}
+
+p {
+    font-family: roboto, sans-serif;
+    color: #587768;
+}
+
+li {
+    font-family: roboto, sans-serif;
+    color: #587768;
+}
+
+td {
+    font-family: roboto, sans-serif;
+    color: #587768;
+}
+
+th {
+    font-family: lemon, sans-serif;
+    color: #587768;
+}
+
+label {
+    font-family: roboto, sans-serif;
+    color: #587768;
+}
+
+h4 {
+    font-family: lemon, sans-serif;
+    color: #587768;
+}
+
+/* I wanted to match the color of the text to the rest of the document.
+I found the solution for this code on: 
+https://www.w3schools.com/howto/howto_css_placeholder.asp and
+https://www.jotform.com/answers/432034-how-to-change-dropdown-list-text-color */
+::placeholder {
+    color: #587768;
+}
+
+#contact-reason {
+    color: #587768;
+}
+
+#contact-submit {
+    color: #587768;
+}
+

@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+/* I used: https://www.w3schools.com/howto/howto_css_image_center.asp to figure out how to center my profile image */
+img{
+    display: block;
+    width: 200px;
+    border-radius: 50%;
+    border: medium solid #587768;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+main {
+    border: medium dashed #e4bcc4;
+    width: 60%;
+    margin-left: 20%;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #f5f4ea;
+}
+
+body {
+    background-color: white;
+}
+
+/* Didn't pad headers because they were already spaced nicely */
+h1 {
+    color: rgb(222, 124, 59);
+    text-shadow: 5px 5px hsla(348, 84%, 81%, 0.5);
+    font-family: lemon, sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2 {
+    color: #e39932;
+    font-family: lemon, sans-serif;
+    font-size: 30px;
+    
+}
+
+h3 {
+    color:#587768;
+    font-family: lemon, sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    color: #e4bcc4;
+}
+
+p {
+    font-family: roboto, sans-serif;
+    color: #587768;
+}
+
+li {
+    font-family: roboto, sans-serif;
+    color: #587768;
+}
+
+td {
+    font-family: roboto, sans-serif;
+    color: #587768;
+}
+
+th {
+    font-family: lemon, sans-serif;
+    color: #587768;
+}
+
+label {
+    font-family: roboto, sans-serif;
+    color: #587768;
+}
+
+h4 {
+    font-family: lemon, sans-serif;
+    color: #587768;
+}
+
+/* I wanted to match the color of the text to the rest of the document.
+I found the solution for this code on: 
+https://www.w3schools.com/howto/howto_css_placeholder.asp and
+https://www.jotform.com/answers/432034-how-to-change-dropdown-list-text-color */
+::placeholder {
+    color: #587768;
+}
+
+
+#technology {
+    border-top: medium dashed #e4bcc4;
+}
+
+#contact-name {
+    margin-top: 20px;
+}
+
+#contact-email {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#contact-role {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#contact-reason {
+    color: #587768;
+    margin-bottom: 20px;
+}
+
+
+#contact-submit {
+    color: #587768;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#summary {
+    border-top: medium dashed #e4bcc4;
+}
+
+#education {
+    border-top: medium dashed #e4bcc4;
+}
+
+#tools {
+    border-top: medium dashed #e4bcc4;
+    padding-bottom: 10px;
+}
+
+#technology {
+    border-top: medium dashed #e4bcc4;
+}
+
+#projects {
+    border-top: medium dashed #e4bcc4;
+}
+
+/* Example of collapsed margin */
+#projects p {
+    margin: 0.4em 0 1.2rem 0;
+}
+
+
+#contact {
+    border-top: medium dashed #e4bcc4;
+}
+
+
+
+#connect {
+    border-top: medium dashed #e4bcc4;
+}
+
+
+form {
+    outline: none;
+}
+
+#contact h2 {
+    margin-bottom: 0.3em;
+}

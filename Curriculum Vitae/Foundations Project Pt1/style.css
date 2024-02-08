@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Made the portrait a perfect circle, gave it a border, and moved it with margin */
+.info-portrait {
+    display: block;
+    border-radius: 50%;
+    height: 260px;
+    width: 260px;
+    border: medium solid #587768;
+    margin-top: 1em;
+}
+
+main {
+    border: medium dashed #e4bcc4;
+    width: 80%;
+    margin-left: 10%;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #f5f4ea;
+}
+
+body {
+    background-color: white;
+}
+
+/* Didn't pad headers because they were already spaced nicely */
+h1 {
+    color: rgb(222, 124, 59);
+    text-shadow: 5px 5px hsla(348, 84%, 81%, 0.5);
+    font-family: lemon, sans-serif;
+    font-size: 40px;
+}
+
+h2 {
+    color: #e39932;
+    font-family: lemon, sans-serif;
+    font-size: 30px;
+    
+}
+
+h3 {
+    color:#587768;
+    font-family: lemon, sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    color: #e4bcc4;
+}
+
+p {
+    font-family: roboto, sans-serif;
+    color: #587768;
+}
+
+li {
+    font-family: roboto, sans-serif;
+    color: #587768;
+}
+
+td {
+    font-family: roboto, sans-serif;
+    color: #587768;
+    padding-left: 3em;
+}
+
+th {
+    font-family: lemon, sans-serif;
+    color: #587768;
+}
+
+label {
+    font-family: roboto, sans-serif;
+    color: #587768;
+}
+
+h4 {
+    font-family: lemon, sans-serif;
+    color: #587768;
+}
+
+#message {
+    display: block;
+    margin-bottom: 1em;
+}
+
+/* I wanted to match the color of the text to the rest of the document.
+I found the solution for this code on: 
+https://www.w3schools.com/howto/howto_css_placeholder.asp and
+https://www.jotform.com/answers/432034-how-to-change-dropdown-list-text-color */
+::placeholder {
+    color: #587768;
+}
+
+.heather-info {
+    display: flex;
+    justify-content: flex-end;
+    
+ }
+ 
+ .heather-info a {
+     margin-left: 5px;
+ } 
+
+ /* Used Flexbox to space elements */
+#heather-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#heather-container h1 {
+    margin-left: 60px;
+}
+
+/* Used a transition on specified links */
+.education-content:hover, #heather-email:hover {
+    background-color: #e4bcc4;
+    color: white;
+}
+
+.education-content, #heather-email {
+    transition: all 0.3s ease-in;
+}
+
+
+#technology {
+    border-top: medium dashed #e4bcc4;
+}
+
+#tech-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -1em;
+}
+
+#contact-name {
+    margin-top: 20px;
+    width: 14.7em;
+}
+
+#contact {
+    border-top: medium dashed #e4bcc4;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -1em;
+}
+
+#contact-form {
+    display: flex;
+    justify-content: center;
+    padding: 2px 0 0 0;
+}
+
+#contact-email {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 14.8em;
+}
+
+#contact-role {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 15.3em;
+}
+
+#contact-reason {
+    color: #587768;
+    margin-bottom: 20px;
+    width: 7.4em;
+}
+
+#contact-submit {
+    color: #587768;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    transition: all 0.3s ease-in;
+}
+
+#contact-submit:hover {
+    background-color: #e4bcc4;
+}
+
+.contact-box {
+    width: 18.2em;
+    height: 5em;
+}
+
+#summary {
+    border-top: medium dashed #e4bcc4;
+}
+
+#education {
+    border-top: medium dashed #e4bcc4;
+}
+
+#tools {
+    border-top: medium dashed #e4bcc4;
+    padding-bottom: 10px;
+    padding-right: 50px;
+   
+}
+
+#tools h3 {
+    padding-left: 2em;
+    color: #e39932;
+}
+
+#projects {
+    border-top: medium dashed #e4bcc4;
+}
+
+/* Example of collapsed margin */
+#projects p {
+    margin: 0.4em 0 1.2rem 0;
+}
+
+#connect {
+    border-top: medium dashed #e4bcc4;
+}
+
+#connect ul {
+    list-style-type: none;
+}
+
+.github-social {
+    list-style-image: url("github.svg");
+}
+
+.github-social img {
+    height: 1.5em;
+    padding-right: 0.3em;
+}
+
+.linkedin-social img {
+    height: 1.5em;
+    padding-right: 0.1em;
+}
+
+@media (max-width: 480px) {
+    #heather-container { 
+        justify-content: center;
+        margin-right: 0;
+    }
+    #heather-container img {
+        width: 130px;
+        height: 130px;
+    }
+    #heather-container h1 {
+        font-size: 30px;
+    }
+    main {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
