@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, #d6b139, #ea7950);
+}
+
+input {
+  background-color: #d6b139;
+}
+
+.search-container {
+  display: fixed;
+  margin-top: 20em;
+  margin-left: 40em;
+}
+
+.suggestions {
+  width: 22%;
+  background-color: #d6b139;
+  border-top: none;
+  z-index: 1;
+  max-height: 200px;
+  /* grows suggestion box in the y-axis */
+  overflow-y: auto;
+  display: none;
+}
+
+.suggestions li {
+  width: 20%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestions li:hover {
+  background-color: #e56626;
+}
+
+.suggestions ul {
+  /* hides bullet points */
+  list-style-type: none; 
+  padding: 0;
+}
