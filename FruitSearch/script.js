@@ -7,8 +7,9 @@ const fruits = ['Apple', 'Apricot', 'Avocado 🥑', 'Banana', 'Bilberry', 'Black
 function search(str) {
 	let results = [];
 	console.log(str);
+	// loops through all fruits and adds them to results if user input is included in fruit list
 	fruits.forEach(fruit => {
-		if (fruit.toLowerCase().includes(str.toLowerCase())){
+		if (fruit.toLowerCase().includes(str.toLowerCase())) {
 			results.push(fruit);
 		}
 	});
@@ -22,16 +23,16 @@ function searchHandler(e) {
 	let searchBoxVal = searchBox.value;
 	const dropdown = document.querySelector(".suggestions");
 
-    if (searchBoxVal === '') {
-        // If the search box is empty, hide the dropdown
-        dropdown.style.display = 'none';
-    } else {
-        let results = search(searchBoxVal);
-        console.log(results);
-        showSuggestions(results, searchBoxVal);
-        // Show the dropdown
-        dropdown.style.display = 'block';
-    }
+	if (searchBoxVal === '') {
+		// If the search box is empty, hide the dropdown
+		dropdown.style.display = 'none';
+	} else {
+		let results = search(searchBoxVal);
+		console.log(results);
+		showSuggestions(results, searchBoxVal);
+		// Show the dropdown
+		dropdown.style.display = 'block';
+	}
 	// if search box is empty, clear the results
 	if (searchBoxVal === '') {
 		ul.innerHTML = '';
@@ -67,10 +68,10 @@ function useSuggestion(e) {
 const dropdown = document.querySelector(".suggestions");
 dropdown.addEventListener('click', useSuggestion);
 
-dropdown.addEventListener('mouseleave', function() {
-    // When the mouse leaves the dropdown, hide the dropdown
-    dropdown.style.display = 'none';
+dropdown.addEventListener('mouseleave', function () {
+	// When the mouse leaves the dropdown, hide the dropdown
+	dropdown.style.display = 'none';
 });
 
-
+// 
 input.addEventListener('keyup', searchHandler);
